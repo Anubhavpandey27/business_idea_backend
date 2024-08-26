@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.matching.backend</groupId>
+	<artifactId>matching-backend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>matching-backend</name>
+	<description>Spring Boot Backend for Matching Users Based on Business Ideas</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.3</version> <!-- Update this to the latest version -->
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<java.version>17</java.version> <!-- Ensure this matches your project's Java version -->
+		<spring-boot.version>3.1.2</spring-boot.version>
+	</properties>
+
+	<dependencies>
+
+		<!-- Spring Boot Starter Web -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<!-- Spring Boot Starter Data JPA -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- PostgreSQL Driver -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Spring Boot Starter Test -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
+
+</project>
